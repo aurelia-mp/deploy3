@@ -62,7 +62,7 @@ io.on('connection', socket =>{
 })
 
 // Inicio el servidor
-const PORT = 8081
+const PORT = `0.0.0.0:$PORT`
 const connectedServer = httpserver.listen(PORT, () => {
     console.log(`Servidor http escuchando en el puerto ${connectedServer.address().port}`)
 })
